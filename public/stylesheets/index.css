@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+#logoDiv{
+    background-color: #a2553e;
+    width: 100vw;
+}
+#quenLogo{
+    height: 15vh;
+    margin: 0 auto;
+    display:block;
+   
+}
+#quenImg{
+
+    height: 100vh;
+    width: auto;
+    /* width: 100vw; */
+    opacity: 0.4;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+#backgroundImgContainer{
+    background-color: #d7deda;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+#buttonSection{
+    display:block;
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+button{
+    background-color: #135562;
+    color: white;
+    font-size: 2vh;
+    padding: 2vh 10vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+} 
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      #buttonSection{
+        top: 70vh;
+      }
+      #quenImg{
+          height: auto;
+          width: 100vw;
+      }
+
+}
+
